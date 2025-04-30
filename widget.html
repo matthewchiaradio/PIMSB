@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workout Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .tracker {
+    margin-bottom: 20px;
+  }
+  label, input, button {
+    display: block;
+    margin: 5px 0;
+  }
+  button {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="tracker" id="weightLiftingTracker">
+  <h2>Weight Lifting Tracker</h2>
+  <label for="exercise">Exercise:</label>
+  <input type="text" id="exercise" placeholder="Exercise name">
+  
+  <label for="weight">Weight (lbs):</label>
+  <input type="number" id="weight" placeholder="Weight lifted">
+  
+  <label for="reps">Reps:</label>
+  <input type="number" id="reps" placeholder="Number of reps">
+  
+  <button onclick="submitWeightLifting()">Add Set</button>
+  <button onclick="submitWeightLifting()">Submit</button>
+</div>
+
+<div class="tracker" id="cardioTracker">
+  <h2>Cardio Tracker</h2>
+  <label for="cardioExercise">Exercise:</label>
+  <input type="text" id="cardioExercise" placeholder="Exercise name">
+  
+  <label for="timeMinutes">Time (Minutes, Seconds):</label>
+  <input type="number" id="timeMinutes" placeholder="Minutes">
+  <input type="number" id="timeSeconds" placeholder="Seconds">
+  
+  <label for="intensity">Intensity:</label>
+  <input type="text" id="intensity" placeholder="Intensity">
+  
+  <button onclick="submitCardio()">Submit</button>
+</div>
+
+<script>
+function submitWeightLifting() {
+  // Get the values from inputs
+  var exercise = document.getElementById('exercise').value;
+  var weight = document.getElementById('weight').value;
+  var reps = document.getElementById('reps').value;
+  
+  // Here you would handle the data, e.g., sending it to a server or storing it locally
+  console.log('Weight Lifting:', exercise, weight, 'lbs', reps, 'reps');
+  
+  // Reset the input fields
+  document.getElementById('exercise').value = '';
+  document.getElementById('weight').value = '';
+  document.getElementById('reps').value = '';
+}
+
+function submitCardio() {
+  var cardioExercise = document.getElementById('cardioExercise').value;
+  var timeMinutes = document.getElementById('timeMinutes').value;
+  var timeSeconds = document.getElementById('timeSeconds').value;
+  var intensity = document.getElementById('intensity').value;
+  
+  console.log('Cardio:', cardioExercise, timeMinutes, 'minutes', timeSeconds, 'seconds', intensity);
+  
+  document.getElementById('cardioExercise').value = '';
+  document.getElementById('timeMinutes').value = '';
+  document.getElementById('timeSeconds').value = '';
+  document.getElementById('intensity').value = '';
+}
+</script>
+
+</body>
+</html>

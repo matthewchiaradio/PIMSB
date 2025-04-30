@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheets" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <%= link_to "Dashboard", index_articles_path, class: "btn btn-primary" %>
+            <%= link_to "History", history_articles_path, class: "btn btn-primary" %>
+        </nav>
+    </header>
+    <main id="mainArea">
+        <!--PLACEHOLDERS (of elements top be added)-->
+        <div class="element">
+            <h2>Weight Lifting Tracker</h2>
+            <div class="exercise-input">
+                <label for="exercise">Exercise:</label>
+                <input type="text" id="exercise" placeholder="Exercise name">
+            </div>
+            <div class="set" id="defaultSet">
+                <label for="defaultWeight">Weight (lbs):</label>
+                <input type="number" class="weight" placeholder="Weight lifted">
+                <label for="defaultReps">Reps:</label>
+                <input type="number" class="reps" placeholder="Number of reps">
+            </div>
+            <div id="additionalSets">
+                <!-- Additional sets will be added here -->
+            </div>
+            <button id="addSet">Add Set</button>
+            <button id="addExercise">Submit</button>
+        </div>
+        <div class="element">
+            <h2>Cardio Tracker</h2>
+            <div class="exercise-input">
+                <label for="exercise">Exercise:</label>
+                <input type="text" id="exercise" placeholder="Exercise name">
+            </div>
+            <div class="set" id="time">
+                <label for="defaultTime">Time (Minutes, Seconds):</label>
+                <input type="number" class="minutes" placeholder="Minutes">
+                <input type="number" class="seconds" placeholder="Seconds">
+            </div>
+            <div class="set" id="intensity"> 
+                <label for="defaultIntensity">Intensity:</label>
+                <input type="number" class="intensity" placeholder="Intensity">
+            </div>
+            <button id="addCardio">Submit</button>
+        </div>
+        <button id="filterBtn">Filter Elements</button>
+    </main>
+</body>
+</html>

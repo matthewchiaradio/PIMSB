@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="<%= index_articles_path %>" class="btn btn-primary">Dashboard</a>
+            <a href="<%= history_articles_path %>" class="btn btn-primary">History</a>
+        </nav>
+    </header>
+    <main id="mainArea">
+        <h1>Past Workouts</h1>
+        <form id="searchForm">
+            <label for="exerciseSearch">Search by Exercise Name:</label>
+            <input type="text" id="exerciseSearch" name="exerciseSearch">
+            <label for="dateSearch">Search by Date:</label>
+            <input type="date" id="dateSearch" name="dateSearch">
+            <button type="submit">Search</button>
+        </form>
+        <table id="workoutTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Exercise</th>
+                    <th>Weight</th>
+                    <th>Reps</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Elements entered here -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

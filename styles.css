@@ -1,0 +1,86 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  color: #333;
+}
+
+.tracker {
+  background-color: #fff;
+  border: 2px solid #000;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.tracker label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.tracker input[type="text"],
+.tracker input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tracker input[type="text"]:focus,
+.tracker input[type="number"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.tracker button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tracker button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styling for the second row of inputs for the cardio section */
+#cardioTracker .row {
+  display: flex;
+}
+
+#cardioTracker .row > div {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Style for intensity select box to match the input fields */
+.tracker select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .tracker input[type="text"],
+  .tracker input[type="number"],
+  .tracker button {
+    width: 100%;
+  }
+
+  #cardioTracker .row {
+    flex-direction: column;
+  }
+}

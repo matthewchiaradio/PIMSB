@@ -1,0 +1,133 @@
+.desktop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 250px;
+  height: 58px;
+  top: 147px;
+  left: 982px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #3f3b3b;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .line {
+  width: 120px;
+  top: 215px;
+  left: 995px;
+  mix-blend-mode: darken;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  width: 260px;
+  top: 383px;
+  left: 824px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #716565;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .img {
+  width: 474px;
+  top: 443px;
+  left: 824px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-3 {
+  position: absolute;
+  width: 260px;
+  top: 501px;
+  left: 824px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #716565;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .line-2 {
+  width: 474px;
+  top: 561px;
+  left: 824px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.desktop .overlap {
+  position: absolute;
+  width: 336px;
+  height: 70px;
+  top: 662px;
+  left: 909px;
+}
+
+.desktop .rectangle {
+  position: absolute;
+  width: 304px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  background-color: #1982e4;
+  border-radius: 70px;
+}
+
+.desktop .text-wrapper-4 {
+  position: absolute;
+  width: 250px;
+  top: 11px;
+  left: 86px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .forgot-password {
+  position: absolute;
+  width: 369px;
+  top: 584px;
+  left: 824px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #19638c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
